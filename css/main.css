@@ -4,8 +4,76 @@
     --hospital-green: #acd9b2;
     --white: #ffffff;
     --black: #000000;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
 }
 
-body {
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
     font-family: 'Quicksand', sans-serif;
+}
+
+.main--card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+}
+
+.main--product-card {
+    width: 240px;
+}
+
+.main--product-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.main--product-card figure img {
+    width: 35px;
+    height: 35px;
+}
+
+.product-card--info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card--info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.product-card--info div p:nth-child(2) {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+@media (max-width: 640px) {
+    .main--card-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+
+    .main--product-card {
+        width: 140px;
+    }
+    
+    .main--product-card img {
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
 }
