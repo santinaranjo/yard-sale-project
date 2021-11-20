@@ -61,44 +61,6 @@ html {
     color: var(--very-light-pink);
 }
 
-.desktop-menu {
-    width: 130px;
-    height: auto;
-    border: 1px solid var(--very-light-pink);
-    border-radius: 6px;
-    padding: 20px 20px 0 20px;
-}
-
-.desktop-menu ul {
-    list-style: none;
-}
-
-.desktop-menu ul li {
-    text-align: end;
-}
-
-.desktop-menu ul li:nth-child(1), .desktop-menu ul li:nth-child(2) {
-    font-weight: bold;
-}
-
-.desktop-menu ul li a {
-    color: var(--black);
-    font-size: var(--sm);
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.desktop-menu ul li:last-child {
-    padding-top: 20px;
-    border-top: 1px solid var(--very-light-pink);
-}
-
-.desktop-menu ul li:last-child a {
-    color: var(--hospital-green);
-    font-size: var(--sm);
-}
-
 @media (max-width: 640px) {
     .main--card-container {
         grid-template-columns: repeat(auto-fill, 140px);
