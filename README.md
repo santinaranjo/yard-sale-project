@@ -1,2 +1,2 @@
 # yard-sale-project
-A small yard sale CSS project
+A small e-commerce theme project.
